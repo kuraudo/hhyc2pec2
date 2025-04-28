@@ -1,0 +1,5 @@
+@function triad($color) {
+  $triad1: color.adjust($color,$hue: 60deg);
+  $triad2: color.adjust($color,$hue: 120deg);
+  @return $color, $triad1, $triad2;
+}

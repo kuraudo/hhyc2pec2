@@ -1,0 +1,15 @@
+.lightblue{
+    background-color: lightblue;
+}
+
+@media (min-width: 42em) and (min-height: 27em) {
+    .row__speaker{
+        min-width: 25vw;
+    }
+}
+
+@media (max-width:42em)  {
+    .row__speaker{
+        min-width: 80vw;
+    }
+  }

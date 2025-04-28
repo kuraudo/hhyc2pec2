@@ -1,0 +1,7 @@
+.container__image {
+    max-width: 100%;
+    transform: translateY($transformPhone);
+    @media (min-width: $mqMinWidth) {
+      transform: translateY($transformDesktop);
+    }
+  }

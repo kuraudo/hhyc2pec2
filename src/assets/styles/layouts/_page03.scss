@@ -1,0 +1,7 @@
+ol:has(> li) {
+    list-style-type: upper-roman;
+}
+
+:is(li){
+    color: darkcyan;
+}
