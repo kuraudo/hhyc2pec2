@@ -1,3 +1,14 @@
-.lightblue{
-    background-color: lightblue;
+.container__row-col-formcontainer{
+    container: formcontainer /inline-size;
 }
+
+@container formcontainer (min-width: 42em) and (min-height: 27em){
+    .container__row-col-formcontainer-form {
+        background-color: lightblue;
+    }
+}
+@container rformcontainerow (max-width:42em)  {
+    .container__row-col-formcontainer-form {
+        background-color: lightgreen;
+    }
+  }

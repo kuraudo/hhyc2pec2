@@ -5,3 +5,13 @@ ol:has(> li) {
 :is(li){
     color: darkcyan;
 }
+
+.container-main__articlecontainer-listcontainer{
+    container: lista-contenedor / inline-size; 
+}
+
+@container lista-contenedor (max-width:42em){
+    ol:has(> li) {
+        list-style-type: square;
+    }
+}

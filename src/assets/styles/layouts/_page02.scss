@@ -1,15 +1,21 @@
 .lightblue{
     background-color: lightblue;
 }
-
-@media (min-width: 42em) and (min-height: 27em) {
-    .row__speaker{
+.main-container__row{
+    container: row / inline-size;
+}
+.main-container__row-speaker-image {
+    width: 60%;
+}
+@container row (min-width: 42em) and (min-height: 27em) {
+    .main-container__row-speaker{
         min-width: 25vw;
+
     }
 }
 
-@media (max-width:42em)  {
-    .row__speaker{
+@container row (max-width:42em)  {
+    .main-container__row-speaker{
         min-width: 80vw;
     }
   }

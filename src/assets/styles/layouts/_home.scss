@@ -11,6 +11,7 @@ body {
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
+  container: body / inline-size;
 }
 
 .uoc-container {
@@ -53,8 +54,11 @@ body {
   font-size: 0.75rem;
   text-align: center;
 }
+.uoc-footer__contact-info{
+  margin-bottom: 4.5rem;
+}
 
-.navbar{
+.nav{
   background-color: $uoc-bg;
   color: $uoc-corporate;
 }
@@ -62,7 +66,11 @@ body {
 .steelblue{
   background-color: steelblue;
 }
-
+@container body (max-width:42em){
+  .main-grid {
+    margin-top: 5vh;
+  }
+}
 @supports (display:grid) {
   @media (min-width: 42em) and (min-height: 27em) {
     .main-grid {
@@ -74,26 +82,26 @@ body {
       height:82vh;
       margin-top: 23px;
     }
-    .main-grid__first { 
+    .main-main-grid__div--first { 
       grid-area: 1 / 1 / 5 / 5; 
     }
-    .main-grid__second { 
+    .main-grid__div--second { 
       grid-area: 2 / 2 / 3 / 6; 
       z-index: 2;
     }
-    .main-grid__third { 
+    .main-grid__div--third { 
       grid-area: 1 / 6 / 7 / 7; 
     }
-    .main-grid__fourth { 
+    .main-grid__div--fourth { 
       grid-area: 6 / 1 / 7 / 6;
     }
-    .main-grid__fifth { 
+    .main-grid__div--fifth { 
       grid-area: 1 / 8 / 9 / 9;
     }
-    .main-grid__sixth { 
+    .main-grid__div--sixth { 
       grid-area: 2 / 7 / 3 / 8; 
     }
-    .main-grid__seventh { 
+    .main-grid__div--seventh { 
       grid-area: 8 / 1 / 9 / 8; 
     }
   }
